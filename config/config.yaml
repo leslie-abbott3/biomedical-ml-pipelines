@@ -1,0 +1,13 @@
+model:
+  type: "random_forest"
+  n_estimators: 200
+  max_depth: 20
+  random_state: 42
+
+data:
+  input_path: "data/processed/features.csv"
+  target_column: "binding_affinity"
+
+training:
+  test_size: 0.2
+  cv_folds: 5
